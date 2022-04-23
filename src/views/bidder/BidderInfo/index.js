@@ -7,7 +7,7 @@ import {
   CRow,
   CTable,
   CTableBody,
-  CTableCaption,
+  // CTableCaption,
   CTableDataCell,
   CTableHead,
   CTableHeaderCell,
@@ -17,7 +17,7 @@ import {
   CAccordionItem,
   CTableRow,
 } from '@coreui/react'
-import { DocsCallout, DocsExample } from 'src/components'
+import { DocsExample } from 'src/components'
 import {
   AllBidders,
   RegisteredBiddersUid,

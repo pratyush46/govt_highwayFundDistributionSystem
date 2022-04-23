@@ -1,12 +1,12 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 // import React from 'react'
-import { CButton, CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react'
+import { CButton } from '@coreui/react'
 import { useSelector, useDispatch } from 'react-redux'
 import {
   CContainer,
   CHeader,
-  CHeaderBrand,
+  // CHeaderBrand,
   CHeaderDivider,
   CHeaderNav,
   CHeaderToggler,
@@ -18,8 +18,6 @@ import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
-import { logo } from 'src/assets/brand/logo'
-
 import connectToMetaMask from '../index.js'
 
 const AppHeader = () => {
@@ -51,9 +49,6 @@ const AppHeader = () => {
           <CNavItem>
             <CNavLink href="#">More</CNavLink>
           </CNavItem>
-          <CNavItem>
-            <CButton onClick={connectToMetaMask}>Account</CButton>
-          </CNavItem>
         </CHeaderNav>
         <CHeaderNav>
           <CNavItem>
@@ -70,6 +65,23 @@ const AppHeader = () => {
             <CNavLink href="#">
               <CIcon icon={cilEnvelopeOpen} size="lg" />
             </CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <Link to="/register">
+              <CButton
+                to="/register"
+                color="secondary"
+                className="mt-0"
+                font="2px"
+                active
+                tabIndex={-1}
+              >
+                Register
+              </CButton>
+            </Link>
+          </CNavItem>
+          <CNavItem>
+            <CButton onClick={connectToMetaMask}>Account</CButton>
           </CNavItem>
         </CHeaderNav>
         <CHeaderNav className="ms-3">

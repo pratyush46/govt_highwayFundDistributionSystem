@@ -1,7 +1,9 @@
 import React from 'react'
+// import { NavLink } from 'react-router-dom'
 import {
   CAvatar,
   CBadge,
+  CButton,
   CDropdown,
   CDropdownDivider,
   CDropdownHeader,
@@ -10,17 +12,18 @@ import {
   CDropdownToggle,
 } from '@coreui/react'
 import {
-  cilBell,
-  cilCreditCard,
-  cilCommentSquare,
+  // cilBell,
+  // cilCreditCard,
+  // cilCommentSquare,
   cilEnvelopeOpen,
-  cilFile,
-  cilLockLocked,
-  cilSettings,
+  // cilFile,
+  // cilLockLocked,
+  // cilSettings,
   cilTask,
   cilUser,
 } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
+import connectToMetaMask from '../../index.js'
 
 import avatar8 from './../../assets/images/avatars/8.jpg'
 
@@ -87,6 +90,19 @@ const AppHeaderDropdown = () => {
         <CDropdownItem href="#">
           <CIcon icon={cilEnvelopeOpen} className="me-2" />
           More Public Data
+        </CDropdownItem>
+        <CDropdownDivider />
+
+        <CDropdownItem>
+          <CButton onClick={connectToMetaMask}>Account</CButton>
+        </CDropdownItem>
+        <CDropdownItem>
+          {/*<Link to="/register">
+            <CButton color="primary" className="mt-3" active tabIndex={-1}>
+              Register
+            </CButton>
+          </Link>*/}
+          {/*<NavLink to="/register">anywords</NavLink>*/}
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>

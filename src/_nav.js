@@ -1,18 +1,18 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
-  cilBell,
-  cilCalculator,
-  cilChartPie,
-  cilCursor,
-  cilDrop,
-  cilNotes,
-  cilPencil,
+  // cilBell,
+  // cilCalculator,
+  // cilChartPie,
+  // cilCursor,
+  // cilDrop,
+  // cilNotes,
+  // cilPencil,
   cilPuzzle,
   cilSpeedometer,
-  cilStar,
+  // cilStar,
 } from '@coreui/icons'
-import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import { CNavGroup, CNavItem } from '@coreui/react'
 
 const _nav = [
   {
@@ -59,6 +59,11 @@ const _nav = [
         component: CNavItem,
         name: 'BidderInfo',
         to: '/bidder/bidderInfo',
+      },
+      {
+        component: CNavItem,
+        name: 'ApplyForContract',
+        to: '/bidder/ApplyForContract',
       },
       {
         component: CNavItem,

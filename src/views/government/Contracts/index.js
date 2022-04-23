@@ -18,12 +18,12 @@ import {
   CFormFeedback,
   CFormLabel,
   CFormSelect,
-  CFormTextarea,
+  // CFormTextarea,
   CInputGroup,
   CInputGroupText,
   CRow,
 } from '@coreui/react'
-import { DocsCallout, DocsExample } from 'src/components'
+// import { DocsCallout, DocsExample } from 'src/components'
 import {
   SetDetails,
   transferOwnership2,
@@ -707,7 +707,8 @@ const Contracts = () => {
           </CCardHeader>
           <CCardBody>
             <p className="text-medium-emphasis small">basic contract infos</p>
-            <DocsExample href="forms/validation#tooltips">{Tooltips()}</DocsExample>
+            {Tooltips()}
+            {/*<DocsExample href="forms/validation#tooltips"></DocsExample>*/}
           </CCardBody>
         </CCard>
       </CCol>
@@ -718,7 +719,8 @@ const Contracts = () => {
           </CCardHeader>
           <CCardBody>
             <p className="text-medium-emphasis small">add bidder modify</p>
-            <DocsExample href="forms/validation#tooltips">{TooltipsOne()}</DocsExample>
+            {TooltipsOne()}
+            {/*<DocsExample href="forms/validation#tooltips"></DocsExample>*/}
           </CCardBody>
         </CCard>
       </CCol>
@@ -729,7 +731,8 @@ const Contracts = () => {
           </CCardHeader>
           <CCardBody>
             <p className="text-medium-emphasis small">Reduce bidder modify</p>
-            <DocsExample href="forms/validation#tooltips">{TooltipsTwo()}</DocsExample>
+            {TooltipsTwo()}
+            {/*<DocsExample href="forms/validation#tooltips"></DocsExample>*/}
           </CCardBody>
         </CCard>
       </CCol>
@@ -740,7 +743,8 @@ const Contracts = () => {
           </CCardHeader>
           <CCardBody>
             <p className="text-medium-emphasis small">Transer bidder modify</p>
-            <DocsExample href="forms/validation#tooltips">{TooltipsThree()}</DocsExample>
+            {TooltipsThree()}
+            {/*<DocsExample href="forms/validation#tooltips"></DocsExample>*/}
           </CCardBody>
         </CCard>
       </CCol>
@@ -751,7 +755,8 @@ const Contracts = () => {
           </CCardHeader>
           <CCardBody>
             <p className="text-medium-emphasis small">withdraw</p>
-            <DocsExample href="forms/validation#tooltips">{TooltipsFour()}</DocsExample>
+            {TooltipsFour()}
+            {/*<DocsExample href="forms/validation#tooltips"></DocsExample>*/}
           </CCardBody>
         </CCard>
       </CCol>

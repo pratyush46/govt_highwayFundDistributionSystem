@@ -4,7 +4,7 @@ import {
   CRow,
   CTable,
   CTableBody,
-  CTableCaption,
+  // CTableCaption,
   CTableDataCell,
   CTableHead,
   CTableHeaderCell,
@@ -19,12 +19,12 @@ import {
   CFormFeedback,
   CFormLabel,
   CFormSelect,
-  CFormTextarea,
+  // CFormTextarea,
   CInputGroup,
   CInputGroupText,
   CTableRow,
 } from '@coreui/react'
-import { DocsCallout, DocsExample } from 'src/components'
+// import { DocsExample } from 'src/components'
 
 const CustomStyles = () => {
   const [validated, setValidated] = useState(false)
@@ -264,7 +264,9 @@ const Dashboard = (props) => {
             <p className="text-medium-emphasis small">
               Search here will provide the basic info of Ongoing selected contracts
             </p>
-            <DocsExample href="forms/validation#tooltips">{Tooltips()}</DocsExample>
+            {Tooltips()}
+            {/*<DocsExample href="forms/validation#tooltips"></DocsExample>
+             */}{' '}
           </CCardBody>
         </CCard>
       </CCol>
@@ -281,41 +283,41 @@ const Dashboard = (props) => {
             </p>
 
             <p className="text-medium-emphasis small">These are current running projects;</p>
-            <DocsExample href="components/table#striped-rows">
-              <CTable color="success" striped>
-                <CTableHead>
-                  <CTableRow>
-                    <CTableHeaderCell scope="col">#</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Contract Name</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">ContractNumber</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Class</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Warranty</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Days</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Budget</CTableHeaderCell>
-                  </CTableRow>
-                </CTableHead>
-                <CTableBody>
-                  <CTableRow>
-                    <CTableHeaderCell scope="row">1</CTableHeaderCell>
-                    <CTableDataCell>Mark</CTableDataCell>
-                    <CTableDataCell>Otto</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                  </CTableRow>
-                  <CTableRow>
-                    <CTableHeaderCell scope="row">1</CTableHeaderCell>
-                    <CTableDataCell>Mark</CTableDataCell>
-                    <CTableDataCell>Otto</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                    <CTableDataCell>@mdo</CTableDataCell>
-                  </CTableRow>
-                </CTableBody>
-              </CTable>
-            </DocsExample>
+            {/*<DocsExample href="components/table#striped-rows">*/}
+            <CTable color="success" striped>
+              <CTableHead>
+                <CTableRow>
+                  <CTableHeaderCell scope="col">#</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">Contract Name</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">ContractNumber</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">Class</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">Warranty</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">Days</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">Budget</CTableHeaderCell>
+                </CTableRow>
+              </CTableHead>
+              <CTableBody>
+                <CTableRow>
+                  <CTableHeaderCell scope="row">1</CTableHeaderCell>
+                  <CTableDataCell>Mark</CTableDataCell>
+                  <CTableDataCell>Otto</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                </CTableRow>
+                <CTableRow>
+                  <CTableHeaderCell scope="row">1</CTableHeaderCell>
+                  <CTableDataCell>Mark</CTableDataCell>
+                  <CTableDataCell>Otto</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                  <CTableDataCell>@mdo</CTableDataCell>
+                </CTableRow>
+              </CTableBody>
+            </CTable>
+            {/*</DocsExample>*/}
           </CCardBody>
         </CCard>
       </CCol>

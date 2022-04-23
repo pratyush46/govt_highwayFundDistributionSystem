@@ -51,6 +51,7 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const BidderInfo = React.lazy(() => import('./views/bidder/BidderInfo'))
 const ApplyAsBidder = React.lazy(() => import('./views/bidder/ApplyAsBidder'))
+const ApplyForContract = React.lazy(() => import('./views/bidder/ApplyForContract'))
 const Bidders = React.lazy(() => import('./views/government/Bidders'))
 const Contracts = React.lazy(() => import('./views/government/Contracts'))
 const PendingBidders = React.lazy(() => import('./views/government/PendingBidders'))
@@ -104,6 +105,7 @@ const routes = [
   { path: '/bidder', name: 'bidder', element: BidderInfo, exact: true },
   { path: '/bidder/BidderInfo', name: 'Info', element: BidderInfo },
   { path: '/bidder/ApplyAsBidder', name: 'Apply', element: ApplyAsBidder },
+  { path: '/bidder/ApplyForContract', name: 'Apply', element: ApplyForContract },
   { path: '/government', name: 'Government', element: Contracts, exact: true },
   { path: '/government/Contracts', name: 'Contracts', element: Contracts },
   { path: '/government/Bidders', name: 'bidderInfo', element: Bidders },

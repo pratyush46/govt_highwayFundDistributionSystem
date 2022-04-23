@@ -38,6 +38,11 @@ const _navBidder = [
       },
       {
         component: CNavItem,
+        name: 'ApplyForContract',
+        to: '/bidder/ApplyForContract',
+      },
+      {
+        component: CNavItem,
         name: 'ApplyAsBidder',
         to: '/bidder/ApplyAsBidder',
       },

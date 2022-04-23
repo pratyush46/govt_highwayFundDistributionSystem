@@ -26,7 +26,7 @@ async function AllBidders(UID) {
   // var daata = Mycontract.methods.AllBidders(UID).encodeABI()
   // signAndSendTransaction(daata)
   console.log(`Called AllBidders`)
-  if (UID == 0) {
+  if (UID === 0) {
     // console.log("Invalid Input UIDS start from 1")
     return 'Invalid Input UIDS start from 1'
   }
